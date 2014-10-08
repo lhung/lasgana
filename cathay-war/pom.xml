@@ -19,8 +19,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring.version>4.0.6.RELEASE</spring.version>
+        <tiles.version>3.0.4</tiles.version>
         <guava.version>17.0</guava.version>
         <commons.lang3.version>3.3.2</commons.lang3.version>
+        <commons.poi.version>3.10-FINAL</commons.poi.version>
     </properties>
 
     <dependencies>
@@ -71,6 +73,21 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons.lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${commons.poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>${commons.poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-extras</artifactId>
+            <version>${tiles.version}</version>
         </dependency>
     </dependencies>
 

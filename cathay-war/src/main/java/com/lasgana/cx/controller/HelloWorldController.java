@@ -1,25 +1,19 @@
 package com.lasgana.cx.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by ch594u on 8/30/14.
  */
-@RestController
+@Controller
 public class HelloWorldController {
 
-
-    public HelloWorldController() {
-        System.out.println("!!!!!!!init!!!!!!!");
-    }
-
-
-    @ResponseBody
     @RequestMapping("/")
-    public String helloWorld()
-    {
-        return "Hello, World!";
+    public String testView(Model model) {
+        model.addAttribute("title", "My custom title");
+        return "thymeleaf/users";
     }
+
 }

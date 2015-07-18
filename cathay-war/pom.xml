@@ -18,11 +18,11 @@
         <appengine.app.version>1-war</appengine.app.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <spring.version>4.0.6.RELEASE</spring.version>
-        <tiles.version>3.0.4</tiles.version>
-        <guava.version>17.0</guava.version>
-        <commons.lang3.version>3.3.2</commons.lang3.version>
-        <commons.poi.version>3.10-FINAL</commons.poi.version>
+        <spring.version>4.1.7.RELEASE</spring.version>
+        <tiles.version>3.0.5</tiles.version>
+        <guava.version>18.0</guava.version>
+        <commons.lang.version>3.4</commons.lang.version>
+        <commons.poi.version>3.12</commons.poi.version>
     </properties>
 
     <dependencies>
@@ -72,7 +72,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>${commons.lang3.version}</version>
+            <version>${commons.lang.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
